@@ -12,22 +12,20 @@ $(function(){
 
 	//////////////------typing------/////////////////////////
 
-	var words = [
-		"More about me",
-	];
+	var words ="More about me";
 
 	var time = 0;
 	
 	function typewords() {
 
 		console.log("Hi Martin");
-		for(i=0; i<words.length; i++) {
-			for(j=0;j<words[i].length; j++) {
-				var word = words[i].substr(0,j+1)
+		
+			for(j=0;j<words.length; j++) {
+				var word = words.substr(0,j+1)
 				time = time + 300;
 				typeWord(word,time);	
 			}
-		}
+	
 	}
 	function typeWord(word,time) {
 
@@ -59,9 +57,14 @@ $(function(){
 		}
 
 		var typeStart = $("section:nth-of-type(4)").position().top -500;
-		
+
+		var done = false;
 		if(iTop > typeStart) {
-			setTimeout(typewords);
+			if(!done){
+				typewords();
+				done = true;
+			}
+			
 		}
 
 		if($(this).scrollTop() > 200) {
@@ -133,19 +136,19 @@ $(function(){
 
 	};
 
-	// if (annyang) {
-	//   // Let's define a command.
-	//   var commands = {
-	//     'down': fDown,
-	//     'top' : fTop
-	//   };
+	if (annyang) {
+	  // Let's define a command.
+	  var commands = {
+	    'down': fDown,
+	    'top' : fTop
+	  };
 
-	//   // Add our commands to annyang
-	//   annyang.addCommands(commands);
+	  // Add our commands to annyang
+	  annyang.addCommands(commands);
 
-	//   // Start listening.
-	//   annyang.start();
-	// }
+	  // Start listening.
+	  annyang.start();
+	}
 
 
 	$(".goDown").on("click", fDown);

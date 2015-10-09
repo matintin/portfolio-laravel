@@ -14,28 +14,34 @@
                     
                 </div>
             </div>
-            <form action="" class="pure-form">
+            {!! Form::open(['url'=>'users', 'class'=>'pure-form'])!!}
+           
                  <fieldset class="mobile-contact">
-                    <div class="pure-control-group">
-                        <label for="name">Name</label>
-                        <input id="name" type="text" name="name">
-                    </div>
 
                     <div class="pure-control-group">
-                        <label for="email">Email</label>
-                        <input id="email" type="email" name="email">
-                    </div>
 
-                    <div class="pure-control-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message"></textarea>
+                    {!! Form::label('name','Name') !!}
+                    {!! Form::text('name') !!}
+                    {!! $errors->first('name', '<p class="error">:message</p>') !!}
+                    
+                    {!! Form::label('email','Email') !!}
+                    {!! Form::email('email') !!}
+                    {!! $errors->first('email', '<p class="error">:message</p>') !!}
+
+                    {!! Form::label('message','Message') !!}
+                    {!! Form::textarea('message') !!}
+                    {!! $errors->first('message', '<p class="error">:message</p>') !!}
+
+                      
                     </div>
 
                     <div class="button-wrap">
-                        <button type="submit" class="pure-button pure-button-primary">Submit</button>
+
+                      {!! Form::submit('Send',['class'=>'button pure-button pure-button-primary']) !!}
+
                     </div>
                 </fieldset>
             
-            </form>
+            {!! Form::close() !!}
 
         </section><!-- contact section -->

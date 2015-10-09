@@ -27,12 +27,7 @@
 
                 <div class="bbj-text tablet-box invisible right-col">
                     <span class="work-title">BREADS BY JOSEF</span>
-                    <p class="text-wrap">
-
-                        BBJ want to be seen as the bread experts in their city, and they want to sell more bread. They will be announcing a “Bread of the Week” both on this web site and their Facebook page.
-                        They want lots of photos of the breads
-                        Contact details should be obvious, and they would really like a map.
-                    </p>
+                    
                 </div>
 
                 <div id="goldway" class="work-box invisible">
@@ -42,10 +37,7 @@
                 </div>
             
                 <div class="goldway-text tablet-box invisible left-col">
-                    <span class="work-title">GOLDWAY INTERNATIONAL HOTEL</span>
-                    <p class="text-wrap">
-                        This is a basic overview to communicate our understanding of
-                        the fundamental needs of this project. We propose to develop a completely custom website for Goldway International</p>
+                    <span class="work-title">GOLDWAY HOTEL</span>
                 </div>
 
                 <div id="goldway-tablet" class="work-box invisible right-col">
@@ -68,7 +60,7 @@
 
                 <div class="tablet-box invisible bestfriend-text right-col">
                     <span class="work-title">BESTFRIEND</span>
-                    <p class="text-wrap">bestfriend social network</p>
+                    
                 </div>
 
             </div>

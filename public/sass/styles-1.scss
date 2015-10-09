@@ -15,7 +15,7 @@
 
 body {
 	position:relative;
-	
+	// display:none;
 	.goTop {
 		display: none;
 		position:fixed;
@@ -473,6 +473,7 @@ main {
 			display:flex;
 			flex-wrap:wrap;
 			justify-content:center;
+			align-items:center;
 			#bbj-tablet,#goldway-tablet,#bestfriend-tablet,.tablet-box {
 				display:none;
 			}
@@ -524,11 +525,14 @@ main {
 				// margin-bottom: .5em;
 				display: inline-block;
 				padding-bottom: .5em;
+				line-height: 100%;
+				font-size: 1.8em;
+
 
 				&:after{
 					content: "";
 					width: 2em;
-					border-bottom: thin tomato solid;
+					border-bottom: .1em tomato solid;
 					display: block;
 					
 
@@ -537,7 +541,8 @@ main {
 			}
 			.left-col{
 				width: 48%;
-				margin-right: 4%;				
+				margin-right:1.5em;
+							
 			}
 			.right-col{
 				width: 48%;
@@ -675,7 +680,8 @@ main {
 					width: 100%;
 					// width: 80% !important;
 					margin: 0 auto 10px auto;
-					display:block !important; 
+					display:block !important;
+				
 				}
 				textarea {
 					padding: .5em .6em;
@@ -690,8 +696,8 @@ main {
 				}
 				#message {
 
-					color:#aaa;
-					font-weight:300;
+					font:inherit;
+					color: inherit;
 				}
 				label {
 					margin-bottom: 5px;
@@ -702,7 +708,7 @@ main {
 					width: 100%;
 					display:flex;
 					justify-content:flex-end;
-					button {
+					.button {
 						// display:block;
 						// margin:0 auto !important;
 						border:thin #fff solid;
@@ -711,7 +717,7 @@ main {
 						margin-top: .7em;
 						width: 100%;
 					}
-					button:hover {
+					.button:hover {
 						background-color:#fff;
 						color: tomato;
 						border:thin tomato solid;
@@ -719,7 +725,8 @@ main {
 					}
 					@media only screen and (min-width : 44em){
 						width: 100%;
-						button{
+						.button{
+							margin: 0;
 							width: 200px;
 
 						}

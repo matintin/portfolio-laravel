@@ -1,0 +1,2 @@
+export http_proxy="http://hyonkyong.cho:Gusrud44@proxy:3128"
+export https_proxy="http://hyonkyong.cho:Gusrud44@proxy:3128"

@@ -3,10 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Document</title>
+	<title>Martin's portfolio</title>
 	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
 	<script src="js/d3.js" language="JavaScript"></script>
+
+    <link rel="portfolio" href="{{asset('img/portfolio.png')}}">
+    <link rel="icon" href="{{asset('img/portfolio.png')}}">
+
 	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="{{asset('css/styles-1.css')}}">
@@ -68,7 +72,7 @@
 
 
 		
-<!-- 	// <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.0.0/annyang.min.js"></script> -->
+	// <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.0.0/annyang.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="js/script.js"></script>
 </body>

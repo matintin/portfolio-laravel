@@ -204,6 +204,11 @@ function loadLiquidFillGauge(elementId, value, config) {
 }
 
     var data = [
+
+    //     {
+    //         group:"HTML",
+    //         values:[{},{},{}]
+    // },{},{},{}
         {skill:"PHP", value:50},
         {skill:"CSS", value:40},
         {skill:"HTML", value:20},
