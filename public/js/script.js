@@ -63,6 +63,7 @@ $(function(){
 			if(!done){
 				typewords();
 				done = true;
+				
 			}
 			
 		}

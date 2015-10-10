@@ -9,10 +9,9 @@
             </div>
             <div class="word">
                 <span id="change-word"></span><span class="under-score animated flash infinite">_</span>
-                <div class="me-box-wrap">
-                    <div class="cv-box">cv box</div>
-                    
-                </div>
+             
+                <span id="cv-img"><img src="img/cv.png" alt=""></span>
+                
             </div>
             {!! Form::open(['url'=>'users', 'class'=>'pure-form'])!!}
            

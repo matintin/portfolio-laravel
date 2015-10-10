@@ -527,6 +527,8 @@ main {
 				padding-bottom: .5em;
 				line-height: 100%;
 				font-size: 1.8em;
+				font-family:lato;
+				font-weight:300;
 
 
 				&:after{
@@ -736,9 +738,19 @@ main {
 			}//.mobile-contact - fieldset
 		}//form
 		.word {
+			position:relative
+			display:flex;
+			flex-wrap:wrap;
 			#change-word {
+				flex:0 0 60%;
 				font-size:2em;
 				font-weight:300;
+			}
+			#cv-img {
+				flex:0 0 40%;
+				position:absolute;
+				top:1em;
+				right:2em;
 			}
 
 			display: none;

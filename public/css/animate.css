@@ -61,7 +61,38 @@ Copyright (c) 2015 Daniel Eden
   -webkit-animation-duration: .75s;
   animation-duration: .75s;
 }
+.floating-logo {
+  -webkit-animation-name: floating-logo;
+          animation-name: floating-logo;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out; }
 
+@-webkit-keyframes floating-logo {
+  from {
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0); }
+  50% {
+    -webkit-transform: translate(-50%, 10px);
+            transform: translate(-50%, 10px); }
+  to {
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0); } }
+
+@keyframes floating-logo {
+  from {
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0); }
+  50% {
+    -webkit-transform: translate(-50%, 10px);
+            transform: translate(-50%, 10px); }
+  to {
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0); } }
+            
 @-webkit-keyframes bounce {
   from, 20%, 53%, 80%, 100% {
     -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
