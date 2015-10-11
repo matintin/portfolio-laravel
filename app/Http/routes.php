@@ -20,10 +20,13 @@ Route::get('index',function() {
 Route::get('bbj',function() {
 	return view('bbj');
 });
+route::get('thankyou',function() {
+	return view('thankyou');
+});
 
 Route::post('users',function(\App\Http\Requests\CreateUserRequest $request) {
 
 	$user = \App\User::create($request->all());
 
-	return redirect('index');
+	return redirect('thankyou');
 });
