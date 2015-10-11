@@ -17,8 +17,6 @@ $(function(){
 	var time = 0;
 	
 	function typewords() {
-
-		console.log("Hi Martin");
 		
 			for(j=0;j<words.length; j++) {
 				var word = words.substr(0,j+1)
@@ -32,7 +30,9 @@ $(function(){
 		setTimeout(function() {
 			$("#change-word").html(word)},time);
 	}
+	
 
+	typewords();
 	
 
 	//////////////------typing------/////////////////////////
@@ -56,18 +56,7 @@ $(function(){
 			$("#bestfriend").removeClass("invisible").addClass("animated slideInUp");
 		}
 
-		var typeStart = $("section:nth-of-type(4)").position().top -500;
-
-		var done = false;
-		if(iTop > typeStart) {
-			if(!done){
-				typewords();
-				done = true;
-				
-			}
-			
-		}
-
+		
 		if($(this).scrollTop() > 200) {
 			$(".goTop").fadeIn(500);
 		} else {
@@ -79,7 +68,24 @@ $(function(){
 		var goldway = $("#goldway-tablet").position().top - 500;
 
 		var bestfriend = $("#bestfriend-tablet").position().top - 500;
-	
+
+		var gauge = $('section:nth-of-type(3)').position().top - 200;
+
+		if(iTop > gauge) {
+		
+
+			    var gauge1 = loadLiquidFillGauge("fillgauge1", 66);
+
+			    var gauge2 = loadLiquidFillGauge("fillgauge2", 22);
+
+			    var gauge3 = loadLiquidFillGauge("fillgauge3", 33);
+
+			    var gauge4 = loadLiquidFillGauge("fillgauge4", 44);
+
+			    done = true;
+			
+
+		}
 		// console.log(bbj + "-" + goldway + "-" + bestfriend + "-" + iTop);
 
 		if(iTop > bbj) {

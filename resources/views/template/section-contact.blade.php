@@ -10,7 +10,7 @@
             <div class="word">
                 <span id="change-word"></span><span class="under-score animated flash infinite">_</span>
              
-                <span id="cv-img"><img src="img/cv.png" alt=""></span>
+                <span id="cv-img" class="floating-img"><a href="{{url('./img/martin-cv.pdf')}}" target="_blank" id="cv-download"><img src="img/cv.png" alt=""></a></span>
                 
             </div>
             {!! Form::open(['url'=>'users', 'class'=>'pure-form'])!!}

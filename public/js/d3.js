@@ -286,31 +286,8 @@ function loadLiquidFillGauge(elementId, value, config) {
 
 
 
-window.onload = function() {
+// window.onload = function() {
 
-    var gauge1 = loadLiquidFillGauge("fillgauge1", 66);
-
-    var gauge2 = loadLiquidFillGauge("fillgauge2", 22);
-    // var config2 = liquidFillGaugeDefaultSettings();
-    // config2.circleColor = "#FF7777";
-    // config2.textColor = "#FF4444";
-    // config2.waveTextColor = "#FFAAAA";
-    // config2.waveColor = "#FFDDDD";
-    // config2.circleThickness = 0.2;
-    // config2.textVertPosition = 0.2;
-    // config2.waveAnimateTime = 1000;
-
-    var gauge3 = loadLiquidFillGauge("fillgauge3", 33);
-    // var config3 = liquidFillGaugeDefaultSettings();
-    // config3.circleColor = "#FF7777";
-    // config3.textColor = "#FF4444";
-    // config3.waveTextColor = "#FFAAAA";
-    // config3.waveColor = "#FFDDDD";
-    // config3.circleThickness = 0.2;
-    // config3.textVertPosition = 0.2;
-    // config3.waveAnimateTime = 1000;
-
-    var gauge4 = loadLiquidFillGauge("fillgauge4", 44);
     // var config4 = liquidFillGaugeDefaultSettings();
     // config4.circleColor = "#FF7777";
     // config4.textColor = "#FF4444";
@@ -321,10 +298,10 @@ window.onload = function() {
     // config4.waveAnimateTime = 1000;
  
 
-    document.querySelector(".d3-html").onclick = function() {
+    // document.querySelector(".d3-html").onclick = function() {
 
-        var gauge1 = loadLiquidFillGauge("fillgauge1", 22);
+    //     var gauge1 = loadLiquidFillGauge("fillgauge1", 22);
        
-    };
+    // };
 
-};
+// };

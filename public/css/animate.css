@@ -61,9 +61,9 @@ Copyright (c) 2015 Daniel Eden
   -webkit-animation-duration: .75s;
   animation-duration: .75s;
 }
-.floating-logo {
-  -webkit-animation-name: floating-logo;
-          animation-name: floating-logo;
+.floating-img {
+  -webkit-animation-name: floating-img;
+          animation-name: floating-img;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
@@ -71,7 +71,7 @@ Copyright (c) 2015 Daniel Eden
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out; }
 
-@-webkit-keyframes floating-logo {
+@-webkit-keyframes floating-img {
   from {
     -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0); }
@@ -82,7 +82,7 @@ Copyright (c) 2015 Daniel Eden
     -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0); } }
 
-@keyframes floating-logo {
+@keyframes floating-img {
   from {
     -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0); }

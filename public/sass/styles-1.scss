@@ -489,7 +489,7 @@ main {
 				flex:0 0 80%;
 				// transition: all 0.2s linear;
 				@media only screen and (min-width : 44em){
-					flex:1 0 40%
+					flex:1 0 40%;
 				}
 				a {
 					display:block;
@@ -515,7 +515,7 @@ main {
 				@media only screen and (min-width : 44em){
 					// margin-left:5%;
 					display:block;
-					flex:1 0 40%
+					flex:1 0 40%;
 				}
 			}
 			
@@ -738,19 +738,20 @@ main {
 			}//.mobile-contact - fieldset
 		}//form
 		.word {
-			position:relative
+			position:relative;
 			display:flex;
 			flex-wrap:wrap;
+			flex-direction:space-between;
 			#change-word {
 				flex:0 0 60%;
-				font-size:2em;
+				font-size:1.5em;
 				font-weight:300;
 			}
 			#cv-img {
-				flex:0 0 40%;
+				flex:1 0 20%;
 				position:absolute;
-				top:1em;
-				right:2em;
+				top:.5em;
+				right:0;
 			}
 
 			display: none;
