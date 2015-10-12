@@ -17,32 +17,26 @@ body {
 	position:relative;
 	// display:none;
 	#show-box {
+		display:none;
+		@media only screen and (min-width : 44em){
+			display:block;
+		background-color:#fff;
 		position:absolute;
 		top:100px;
-		left:50%;
-		border: 5px #000 double;
+		left:20px;
+		border: 3px #ccc double;
 		padding:10px;
-		// transform:translate(-50%); 
+		z-index:100;
+	
 		p {
 			text-align: center;
+			color:#aaa;
 			.say {
 				color: tomato;
 			}
 			margin-bottom: .05em;
 		}
-			
-		@media only screen and (min-width : 44em){
-
-		.show-box-top {
-			display: block;
-			font-size: 1.5em;
-			color: #aaa;
-			margin-bottom: .1em;
-		}
-		position:absolute;
-		top:100px;
-		left:10px; 
-					
+	
 		}
 	}
 	.goTop {

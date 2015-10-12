@@ -5,8 +5,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Martin's portfolio</title>
 	
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
-	<script src="js/d3.js" language="JavaScript"></script>
 
     <link rel="portfolio" href="{{asset('img/portfolio.png')}}">
     <link rel="icon" href="{{asset('img/portfolio.png')}}">
@@ -16,12 +14,14 @@
 	<link rel="stylesheet" href="{{asset('css/styles-1.css')}}">
 	<link rel="stylesheet" href="css/animate.css">
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,100' rel='stylesheet' type='text/css'>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+	<script src="js/d3.js" language="JavaScript"></script>
 </head>
 <body>
 <div id="show-box" class="hidden">
-	<p class="show-box-top">Touch voice</p>
-	<p>say '<span class="say">down</span>' to darg down</p>
-	<p>say '<span class="say">top</span>' to going top</p>
+
+	<p>say '<span class="say">down</span>' to scroll</p>
+	<p>say '<span class="say">top</span>' to scroll to top</p>
 </div>
 <header>
 

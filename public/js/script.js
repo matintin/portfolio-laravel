@@ -38,7 +38,7 @@ $(function(){
 	setTimeout(function(){
 		$('#show-box').addClass('hidden').removeClass('animated fadeIn');
 	
-	},8000)
+	},8000);
 
 
 	//////////////------typing------/////////////////////////
@@ -79,7 +79,6 @@ $(function(){
 
 		if(iTop > gauge) {
 		
-
 			    var gauge1 = loadLiquidFillGauge("fillgauge1", 66);
 
 			    var gauge2 = loadLiquidFillGauge("fillgauge2", 22);
@@ -87,9 +86,6 @@ $(function(){
 			    var gauge3 = loadLiquidFillGauge("fillgauge3", 33);
 
 			    var gauge4 = loadLiquidFillGauge("fillgauge4", 44);
-
-			    done = true;
-			
 
 		}
 		// console.log(bbj + "-" + goldway + "-" + bestfriend + "-" + iTop);
@@ -144,9 +140,7 @@ $(function(){
 	};
 
 	var fTop = function() {
-
 		$("html, body").animate({scrollTop: "0"}, 500);
-
 	};
 
 	if (annyang) {
@@ -155,7 +149,9 @@ $(function(){
 	    'down': fDown,
 	    'top' : fTop
 	  };
+
 	  annyang.addCommands(commands);
+
 	  annyang.start();
 	}
 
