@@ -18,7 +18,11 @@
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,100' rel='stylesheet' type='text/css'>
 </head>
 <body>
-
+<div id="show-box" class="hidden">
+	<p class="show-box-top">Touch voice</p>
+	<p>say '<span class="say">down</span>' to darg down</p>
+	<p>say '<span class="say">top</span>' to going top</p>
+</div>
 <header>
 
 	<div class="header-wrap">

@@ -7,6 +7,7 @@ $(function(){
 	// 	var iTop = $(window).scrollTop();
 		$(".lastname").addClass("moving");
 		$(".firstname").removeClass("hidden").addClass("animated fadeIn");
+
 	});
 	////////////////////window onload///////////////////////
 
@@ -31,9 +32,14 @@ $(function(){
 			$("#change-word").html(word)},time);
 	}
 	
-
 	typewords();
 	
+	$('#show-box').removeClass('hidden').addClass('animated fadeIn');
+	setTimeout(function(){
+		$('#show-box').addClass('hidden').removeClass('animated fadeIn');
+	
+	},8000)
+
 
 	//////////////------typing------/////////////////////////
 
@@ -144,16 +150,12 @@ $(function(){
 	};
 
 	if (annyang) {
-	  // Let's define a command.
+	 
 	  var commands = {
 	    'down': fDown,
 	    'top' : fTop
 	  };
-
-	  // Add our commands to annyang
 	  annyang.addCommands(commands);
-
-	  // Start listening.
 	  annyang.start();
 	}
 

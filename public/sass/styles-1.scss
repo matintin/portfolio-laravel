@@ -16,6 +16,35 @@
 body {
 	position:relative;
 	// display:none;
+	#show-box {
+		position:absolute;
+		top:100px;
+		left:50%;
+		border: 5px #000 double;
+		padding:10px;
+		// transform:translate(-50%); 
+		p {
+			text-align: center;
+			.say {
+				color: tomato;
+			}
+			margin-bottom: .05em;
+		}
+			
+		@media only screen and (min-width : 44em){
+
+		.show-box-top {
+			display: block;
+			font-size: 1.5em;
+			color: #aaa;
+			margin-bottom: .1em;
+		}
+		position:absolute;
+		top:100px;
+		left:10px; 
+					
+		}
+	}
 	.goTop {
 		display: none;
 		position:fixed;
