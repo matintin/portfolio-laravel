@@ -783,10 +783,12 @@ main {
 				width:40%;
 				margin:0 auto;
 				.under-score {
-
 					margin: 0;
 					color:tomato;
 					font-size:3em;
+				}
+				.invisible {
+					visibility:hidden;
 				}
 				margin-bottom:2em;
 			}

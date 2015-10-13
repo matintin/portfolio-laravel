@@ -32,7 +32,7 @@ $(function(){
 			$("#change-word").html(word)},time);
 	}
 	
-	typewords();
+	
 	
 	$('#show-box').removeClass('hidden').addClass('animated fadeIn');
 	setTimeout(function(){
@@ -44,6 +44,10 @@ $(function(){
 	//////////////------typing------/////////////////////////
 
 	////////////////scroll///////////////////////////
+
+	var isTyped = false;
+	var isShown = false;
+
 	$(window).on("scroll",function(){
 
 		var iTop = $(window).scrollTop();
@@ -77,7 +81,24 @@ $(function(){
 
 		var gauge = $('section:nth-of-type(3)').position().top - 200;
 
-		if(iTop > gauge) {
+		var typeStart = $('section:nth-of-type(4)').position().top - 500;
+
+		console.log(typeStart);
+
+		if((iTop > typeStart)&& !isTyped) {
+
+			typewords();
+
+			setTimeout(function() {
+				$('.under-score').removeClass("animated flash").addClass("invisible");
+			},5000);
+
+			isTyped = true;
+
+
+		}
+
+		if((iTop > gauge)&& !isShown) {
 		
 			    var gauge1 = loadLiquidFillGauge("fillgauge1", 66);
 
@@ -86,6 +107,8 @@ $(function(){
 			    var gauge3 = loadLiquidFillGauge("fillgauge3", 33);
 
 			    var gauge4 = loadLiquidFillGauge("fillgauge4", 44);
+
+			    isShown = true;
 
 		}
 		// console.log(bbj + "-" + goldway + "-" + bestfriend + "-" + iTop);
