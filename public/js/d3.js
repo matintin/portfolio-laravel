@@ -5,8 +5,6 @@
  *
  * Liquid Fill Gauge v1.1
  */
-
-
 function liquidFillGaugeDefaultSettings(){
     return {
         minValue: 0, // The gauge minimum value.
@@ -201,23 +199,6 @@ function loadLiquidFillGauge(elementId, value, config) {
             });
     }
 
-}
-
-    var data = [
-
-    //     {
-    //         group:"HTML",
-    //         values:[{},{},{}]
-    // },{},{},{}
-        {skill:"PHP", value:50},
-        {skill:"CSS", value:40},
-        {skill:"HTML", value:20},
-        {skill:"JS", value:60},
-        {skill:"Design", value:30},
-        {skill:"SQL", value:10}
-    
-    ];
-
     function GaugeUpdater(){
         this.update = function(value){
             var newFinalValue = parseFloat(value).toFixed(2);
@@ -281,27 +262,7 @@ function loadLiquidFillGauge(elementId, value, config) {
                 .duration(config.waveRiseTime)
                 .attr('transform','translate('+waveGroupXPosition+','+newHeight+')')
         }
-    return new GaugeUpdater();
     }
 
-
-
-// window.onload = function() {
-
-    // var config4 = liquidFillGaugeDefaultSettings();
-    // config4.circleColor = "#FF7777";
-    // config4.textColor = "#FF4444";
-    // config4.waveTextColor = "#FFAAAA";
-    // config4.waveColor = "#FFDDDD";
-    // config4.circleThickness = 0.2;
-    // config4.textVertPosition = 0.2;
-    // config4.waveAnimateTime = 1000;
- 
-
-    // document.querySelector(".d3-html").onclick = function() {
-
-    //     var gauge1 = loadLiquidFillGauge("fillgauge1", 22);
-       
-    // };
-
-// };
+    return new GaugeUpdater();
+}

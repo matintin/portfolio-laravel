@@ -99,8 +99,21 @@ $(function(){
 		}
 
 		if((iTop > gauge)&& !isShown) {
-		
-			    var gauge1 = loadLiquidFillGauge("fillgauge1", 66);
+
+			 	var aValues = $("#fillgauge1").data("values");
+			 	console.log(aValues[0].value);
+			
+			    var gauge1 = loadLiquidFillGauge("fillgauge1", aValues[0].value);
+
+			    var iCurrentIndex = 0;
+			    $("#fillgauge1").on("click",function(){
+
+			    	iCurrentIndex++;
+			    	if(iCurrentIndex >= aValues.length){
+			    		iCurrentIndex = 0;
+			    	}
+			    	gauge1.update(aValues[iCurrentIndex].value);
+			    })
 
 			    var gauge2 = loadLiquidFillGauge("fillgauge2", 22);
 
