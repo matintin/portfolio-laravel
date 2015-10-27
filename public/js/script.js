@@ -99,29 +99,52 @@ $(function(){
 		}
 
 		if((iTop > gauge)&& !isShown) {
+		$(".img-html").on("click",function() {
+			$(".d3-html").removeClass("invisible");
+		});
+		$(".html").on("click",function() {
+			$(".d3-html").addClass("invisible");
+		});
+		$(".img-java").on("click",function() {
+			$(".d3-js").removeClass("invisible");
+		});
+		$(".img-php").on("click",function() {
+			$(".d3-php").removeClass("invisible");
+		});
+		$(".img-else").on("click",function() {
+			$(".d3-else").removeClass("invisible");
+		});
 
-			 	var aValues = $("#fillgauge1").data("values");
-			 	console.log(aValues[0].value);
-			
-			    var gauge1 = loadLiquidFillGauge("fillgauge1", aValues[0].value);
+	 	var aValues = $("#fillgauge1").data("values");
+	 	console.log(aValues[0].value);
+	
+	    var config1 = liquidFillGaugeDefaultSettings();
+		    config1.circleColor = "#314357";
+		    config1.textColor = "#5A6979";
+		    config1.waveTextColor = "";
+		    config1.waveColor = "#C1C7CD";
+		    config1.textVertPosition = 0.5;
+    		config1.waveAnimateTime = 1000;
+		   
+	    var gauge1 = loadLiquidFillGauge("fillgauge1", aValues[0].value,config1);
 
-			    var iCurrentIndex = 0;
-			    $("#fillgauge1").on("click",function(){
+	    var iCurrentIndex = 0;
+	    $("#fillgauge1").on("click",function(){
 
-			    	iCurrentIndex++;
-			    	if(iCurrentIndex >= aValues.length){
-			    		iCurrentIndex = 0;
-			    	}
-			    	gauge1.update(aValues[iCurrentIndex].value);
-			    })
+	    	iCurrentIndex++;
+	    	if(iCurrentIndex >= aValues.length){
+	    		iCurrentIndex = 0;
+	    	}
+	    	gauge1.update(aValues[iCurrentIndex].value);
+	    })
 
-			    var gauge2 = loadLiquidFillGauge("fillgauge2", 22);
+	    var gauge2 = loadLiquidFillGauge("fillgauge2", 22);
 
-			    var gauge3 = loadLiquidFillGauge("fillgauge3", 33);
+	    var gauge3 = loadLiquidFillGauge("fillgauge3", 33);
 
-			    var gauge4 = loadLiquidFillGauge("fillgauge4", 44);
+	    var gauge4 = loadLiquidFillGauge("fillgauge4", 44);
 
-			    isShown = true;
+	    isShown = true;
 
 		}
 		// console.log(bbj + "-" + goldway + "-" + bestfriend + "-" + iTop);
