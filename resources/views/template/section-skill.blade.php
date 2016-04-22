@@ -59,7 +59,7 @@
             </div>
             <div class="d3 skill-wrap">
                 <div class="text-wrap d3-html invisible">
-                    <svg id="fillgauge1" data-values='[{"skill":"HTML", "value":80},{"skill":"CSS", "value":85},{"skill":"JS", "value":75}]'></svg>
+                    <svg id="fillgauge1" data-values='[{"skill":"HTML", "value":80},{"skill":"CSS", "value":85},{"skill":"SASS", "value":75}]'></svg>
                 </div>
                 <div class="text-wrap d3-js invisible">
                     <svg id="fillgauge2"></svg>

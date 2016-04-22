@@ -7,6 +7,14 @@ $(function(){
 	// 	var iTop = $(window).scrollTop();
 		$(".lastname").addClass("moving");
 		$(".firstname").removeClass("hidden").addClass("animated fadeIn");
+		
+		
+	$(window).on("resize", function(){
+
+		$(".text-wrap").css("height", $(".img-wrap").height());
+
+	}).resize();
+
 
 	});
 	////////////////////window onload///////////////////////
@@ -57,13 +65,16 @@ $(function(){
 		// console.log(iTop);
 
 		if(iTop > 440) {
-			$("#bbj").removeClass("invisible").addClass("animated slideInUp");
+			$("#speldnz").removeClass("invisible").addClass("animated slideInUp");
 		}
-		if(iTop > 640) {
-			$("#goldway").removeClass("invisible").addClass("animated slideInUp");
+		if(iTop > 700) {
+			$("#bestfriend").removeClass("invisible").addClass("animated slideInUp");
 		} 
 		if(iTop > 840) {
-			$("#bestfriend").removeClass("invisible").addClass("animated slideInUp");
+			$("#goldway").removeClass("invisible").addClass("animated slideInUp");
+		}
+		if(iTop > 980) {
+			$("#bbj").removeClass("invisible").addClass("animated slideInUp");
 		}
 
 		
@@ -78,6 +89,8 @@ $(function(){
 		var goldway = $("#goldway-tablet").position().top - 500;
 
 		var bestfriend = $("#bestfriend-tablet").position().top - 500;
+
+		var speldnz = $("#speldnz-tablet").position().top - 500;
 
 		var gauge = $('section:nth-of-type(3)').position().top - 200;
 
@@ -101,9 +114,6 @@ $(function(){
 		if((iTop > gauge)&& !isShown) {
 		$(".img-html").on("click",function() {
 			$(".d3-html").removeClass("invisible");
-		});
-		$(".html").on("click",function() {
-			$(".d3-html").addClass("invisible");
 		});
 		$(".img-java").on("click",function() {
 			$(".d3-js").removeClass("invisible");
@@ -138,11 +148,11 @@ $(function(){
 	    	gauge1.update(aValues[iCurrentIndex].value);
 	    })
 
-	    var gauge2 = loadLiquidFillGauge("fillgauge2", 22);
+	    var gauge2 = loadLiquidFillGauge("fillgauge2", 70);
 
-	    var gauge3 = loadLiquidFillGauge("fillgauge3", 33);
+	    var gauge3 = loadLiquidFillGauge("fillgauge3", 85);
 
-	    var gauge4 = loadLiquidFillGauge("fillgauge4", 44);
+	    var gauge4 = loadLiquidFillGauge("fillgauge4", 75);
 
 	    isShown = true;
 
@@ -150,20 +160,25 @@ $(function(){
 		// console.log(bbj + "-" + goldway + "-" + bestfriend + "-" + iTop);
 
 		if(iTop > bbj) {
-			$("#bbj-tablet").removeClass("invisible").addClass("animated slideInLeft");
+			$("#bbj-tablet").removeClass("invisible").addClass("animated slideInRight");
 			$(".bbj-text").removeClass("invisible").addClass("animated fadeIn");
 		}
 
 		if(iTop > goldway) {
-			$("#goldway-tablet").removeClass("invisible").addClass("animated slideInRight");
+			$("#goldway-tablet").removeClass("invisible").addClass("animated slideInLeft");
 			$(".goldway-text").removeClass("invisible").addClass("animated fadeIn");
 		}
 
 		if(iTop > bestfriend) {
-			$("#bestfriend-tablet").removeClass("invisible").addClass("animated slideInLeft");
+			$("#bestfriend-tablet").removeClass("invisible").addClass("animated slideInRight");
 			$(".bestfriend-text").removeClass("invisible").addClass("animated fadeIn");
 		}
 		
+		if(iTop > speldnz) {
+			$("#speldnz-tablet").removeClass("invisible").addClass("animated slideInLeft");
+			$(".speldnz-text").removeClass("invisible").addClass("animated fadeIn");
+		}
+
 		console.log(iTop);	
 	});
 
@@ -278,12 +293,6 @@ $(function(){
 		
 	});//menu click
 
-	$(window).on("resize", function(){
-
-		$(".text-wrap").css("height", $(".img-wrap").height());
-
-	}).resize();
-
 /////////////////////////------------skill-box-----------/////////////////////////
 	
 
@@ -312,4 +321,3 @@ $(function(){
 
 
 });//Jquery
-
